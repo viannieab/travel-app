@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Travel",
+  title: "Kamunzuku Adventures | Travel & Camping Agency",
   description: "Travel UI/UX App for Camping",
 };
 
