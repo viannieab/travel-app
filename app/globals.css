@@ -27,6 +27,9 @@ body {
   .btn_dark_blue {
     @apply border-blue-70 bg-blue-70 px-8 py-5 text-white
   }
+  .btn_lime {
+    @apply border-red-100 bg-red-100 px-8 py-5 text-black
+  }
   .btn_green  { 
     @apply  border-green-50 bg-green-50 px-8 py-5 text-white
   }

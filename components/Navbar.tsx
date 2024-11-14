@@ -1,9 +1,9 @@
-"use client";
-import { useState } from "react";
-import { NAV_LINKS } from "@/constants";
-import Image from "next/image";
-import Link from "next/link";
-import Button from "./Button";
+"use client"
+import { useState } from "react"
+import { NAV_LINKS } from "@/constants"
+import Image from "next/image"
+import Link from "next/link"
+import Button from "./Button"
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -31,10 +31,10 @@ const Navbar = () => {
         ))}
       </ul>
 
-      {/* Desktop Login Button */}
-      <div className="hidden lg:flex flexCenter">
-        <Button type="button" title="Login" icon="/user.svg" variant="btn_dark_green" />
-      </div>
+      {/* Desktop Button */}
+      <Link href="/contact-us" className="hidden lg:flex flexCenter bold-20">
+        <Button type="button" title="Inquires" icon="/info-icon.png" variant="btn_lime" />
+      </Link>
 
       {/* Mobile Menu Button */}
       <Image
@@ -75,9 +75,11 @@ const Navbar = () => {
             </Link>
           ))}
         </ul>
+        {/* <Link href="/contact-us" className="hidden lg:flex flexCenter bold-20">
+          <Button type="button" title="Inquires" icon="/info-icon.png" variant="btn_lime" />
+        </Link> */}
       </div>
     </nav>
-  );
-};
-
-export default Navbar;
+  )
+}
+export default Navbar

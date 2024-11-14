@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Button from "./Button"
+import WhatsApp from '@/components/WhatsApp'
 
 const Hero = () => {
   return (
@@ -60,6 +61,10 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
+        </div>
+        {/* WhatsApp Chat Button */}
+        <div className="fixed bottom-4 right-4">
+            <WhatsApp/>
         </div>
     </section>
   )

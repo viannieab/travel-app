@@ -1,5 +1,6 @@
-import Image from 'next/image';
-import { SERVICES } from '@/constants';
+import Image from 'next/image'
+import { SERVICES } from '@/constants'
+import WhatsApp from '@/components/WhatsApp'
 
 const Services = () => {
   return (
@@ -31,8 +32,11 @@ const Services = () => {
           </div>
         ))}
       </section>
+      {/* WhatsApp Chat Button */}
+      <div className="fixed bottom-4 right-4">
+        <WhatsApp/>
+      </div>
     </div>
-  );
-};
-
+  )
+}
 export default Services;

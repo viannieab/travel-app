@@ -1,6 +1,7 @@
-import { TOUR_PACKAGES } from '@/constants';
-import Image from 'next/image';
-import Button from './Button';
+import { TOUR_PACKAGES } from '@/constants'
+import Image from 'next/image'
+import Button from './Button'
+import WhatsApp from '@/components/WhatsApp'
 
 const TourPackages = () => {
   return (
@@ -33,8 +34,12 @@ const TourPackages = () => {
             </div>
         ))}
       </section>
+      {/* WhatsApp Chat Button */}
+      <div className="fixed bottom-4 right-4">
+        <WhatsApp/>
+      </div>
     </div>
-  );
-};
+  )
+}
 
-export default TourPackages;
+export default TourPackages
