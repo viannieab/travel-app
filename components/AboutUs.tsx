@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Button from './Button';
 
 const AboutUs = () => {
   return (
@@ -73,7 +74,7 @@ const AboutUs = () => {
         </section>
 
         {/* Contact Experts */}
-        <section className="text-center mt-12">
+        {/* <section className="text-center mt-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Talk to Our Travel Experts</h2>
           <div className="flex justify-center space-x-6 mb-6">
             <div className="flex flex-col items-center">
@@ -106,10 +107,42 @@ const AboutUs = () => {
           <div className="mt-6">
             <a href="tel:+256414532162" className="text-green-600 font-medium">Call us: (256)-785-885-880</a>
           </div>
+        </section> */}
+        <section className="text-center mt-12 px-4">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Talk to Our Travel Experts</h2>
+            <div className="flex flex-wrap justify-center gap-6 mb-6">
+                <div className="flex flex-col items-center">
+                    <Image src="/user.png" alt="Viannie" width={100} height={100} className="rounded-full" />
+                    <p className="text-gray-800 font-medium mt-2">Viannie</p>
+                </div>
+                <div className="flex flex-col items-center">
+                    <Image src="/iroid.png" alt="Iroid" width={115} height={130} className="rounded-full" />
+                    <p className="text-gray-800 font-medium mt-2">Iroid</p>
+                </div>
+                <div className="flex flex-col items-center">
+                    <Image src="/moses.jpeg" alt="Moses" width={115} height={130} className="rounded-full" />
+                    <p className="text-gray-800 font-medium mt-2">Moses</p>
+                </div>
+                <div className="flex flex-col items-center">
+                    <Image src="/collin.jpg" alt="Collinz" width={115} height={130} className="rounded-full" />
+                    <p className="text-gray-800 font-medium mt-2">Collinz</p>
+                </div>
+                <div className="flex flex-col items-center">
+                    <Image src="/jb.jpg" alt="JB" width={115} height={130} className="rounded-full" />
+                    <p className="text-gray-800 font-medium mt-2">JB</p>
+                </div>
+            </div>
+            <div className="flex flex-col sm:flex-row justify-center gap-4 mb-6">
+                <Button type='button' title='Inquire Now' variant='btn_orange'/>
+                <Button type='button' title='Request Callback' variant='btn_dark_blue'/>
+                <Button type='button' title='Make Video Appointment' variant='btn_green'/>
+            </div>
+            <div className="mt-6">
+                <a href="tel:+256414532162" className="text-green-600 font-medium block sm:inline">Call us: (256)-785-885-880</a>
+            </div>
         </section>
-      </div>
+    </div>
     </section>
   )
 }
-
 export default AboutUs;
