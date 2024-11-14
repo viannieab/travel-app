@@ -4,7 +4,7 @@ export const NAV_LINKS = [
   { href: '/', key: 'tour-safari', label: 'Tours & Safaris' },
   { href: '/services', key: 'services', label: 'Services' },
   { href: '/packages', key: 'packages', label: 'Tour Packages' },
-  { href: '/', key: 'about_us ', label: 'About' },
+  { href: '/about-us', key: 'about_us ', label: 'About' },
   { href: '/', key: 'contact_us', label: 'Contact' },
 ];
 
