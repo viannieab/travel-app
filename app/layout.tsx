@@ -1,8 +1,7 @@
-import type { Metadata } from "next";
+import type { Metadata } from "next"
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import Navbar from "@/components/Navbar"
+import Footer from "@/components/Footer"
 
 export const metadata: Metadata = {
   title: "Kamunzuku Adventures | Travel & Camping Agency",
